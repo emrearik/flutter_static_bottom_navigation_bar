@@ -2,6 +2,14 @@ import 'package:flutter/material.dart';
 import 'package:flutter_static_bottom_navigation_bar/view/profile/views/edit_profile_screen.dart';
 
 class ProfileScreen extends StatelessWidget {
+  static const String routeName = "/profile";
+
+  static Route route() {
+    return MaterialPageRoute(
+        settings: const RouteSettings(name: routeName),
+        builder: (_) => const ProfileScreen());
+  }
+
   const ProfileScreen({Key? key}) : super(key: key);
 
   @override
@@ -15,8 +23,8 @@ class ProfileScreen extends StatelessWidget {
             child: Text("Profile Screen"),
           ),
           MaterialButton(
-            onPressed: () => Navigator.of(context).push(MaterialPageRoute(
-                builder: (context) => const EditProfileScreen())),
+            onPressed: () =>
+                Navigator.of(context).pushNamed(EditProfileScreen.routeName),
             color: Colors.red,
             child: const Text("Edit Profile"),
           ),

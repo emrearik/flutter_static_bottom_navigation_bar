@@ -3,6 +3,14 @@ import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/src/widgets/framework.dart';
 
 class EditProfileScreen extends StatelessWidget {
+  static const String routeName = "/edit_profile";
+
+  static Route route() {
+    return MaterialPageRoute(
+        settings: const RouteSettings(name: routeName),
+        builder: (_) => const EditProfileScreen());
+  }
+
   const EditProfileScreen({Key? key}) : super(key: key);
 
   @override

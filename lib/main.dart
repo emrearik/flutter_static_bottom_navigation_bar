@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:flutter_static_bottom_navigation_bar/core/init/navigation/navigation_route.dart';
 import 'package:flutter_static_bottom_navigation_bar/view/nav_with_static_bottom_nav_bar/cubit/bottom_navbar_cubit.dart';
 import 'package:flutter_static_bottom_navigation_bar/view/nav_with_static_bottom_nav_bar/navscreen_with_static_bottom_navbar.dart';
-
-import 'view/nav_with_bottom_nav_bar/nav_screen_with_bottom_nav_bar.dart';
 
 void main() {
   runApp(const MyApp());

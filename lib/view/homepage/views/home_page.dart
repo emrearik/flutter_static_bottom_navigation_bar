@@ -3,6 +3,14 @@ import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/src/widgets/framework.dart';
 
 class HomePageScreen extends StatelessWidget {
+  static const String routeName = "/homepage";
+
+  static Route route() {
+    return MaterialPageRoute(
+        settings: const RouteSettings(name: routeName),
+        builder: (_) => const HomePageScreen());
+  }
+
   const HomePageScreen({Key? key}) : super(key: key);
 
   @override
